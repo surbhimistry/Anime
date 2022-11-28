@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 body {
     background-image: url(IMAGES/homebg.jpg);
@@ -60,13 +62,15 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    
 }
 .text-box h1{
     font-size: 62px
 }
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 14px
+    font-size: 14px;
+    overflow-y: hidden;
 }
 nav .fa-solid{
     display: none;
@@ -93,6 +97,7 @@ nav .fa-solid{
     background-color: #F40009; 
     color: #fff;
     text-align: center;
+    overflow-y: hidden;
 }
 
 .high p{
@@ -182,6 +187,7 @@ nav .fa-solid{
     border-radius: 25px;
     margin: 30px;
     position: absolute;
+    overflow-y: hidden;
 }
 .c-2 img{
     border-radius: 25px;
@@ -212,6 +218,7 @@ nav .fa-solid{
     border-radius: 25px;
     margin: 30px;
     position: absolute;
+    overflow-y: hidden;
 }
 .c3-2 img{
     border-radius: 25px;
@@ -242,6 +249,7 @@ nav .fa-solid{
     border-radius: 25px;
     margin: 30px;
     position: absolute;
+    overflow-y: hidden;
 }
 .c4-2 img{
     border-radius: 25px;
