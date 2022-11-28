@@ -1,0 +1,69 @@
+<html>
+<head> 
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title> Anime Blog </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8df5502624.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <section class="header">
+     <nav>
+         <a href="index.html"> <img src="IMAGES/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cont.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+     </nav>
+
+<div class="grid">
+<div class="item1"> 
+<div class="c-1">
+</div>
+<div class="c-2">
+<a href="bleach.html">
+<img src="IMAGES/TYBW.jpg" width="300" height="300">
+</a>
+<p><a href="bleach.html">Bleach</a></p>  
+</div>
+</div>
+
+    
+<div class="item2">
+<div class="c3-1">
+</div>
+    <div class="c3-2"> 
+        <a href="naruto.html">
+        <img src="IMAGES/NARUTO.jpg" width="300" height="300"> </a>
+        <p><a href="naruto.html">Naruto</a></p>  
+</div></div>
+  <div class="item3"><div class="c4-1">
+</div>
+    <div class="c4-2">
+        <a href="chainsawman.html"><img src="IMAGES/CSM.jpg" width="300" height="300"></a>
+        <p><a href="chainsawman.html">Chainsaw Man</a></p>  
+</div></div>  
+</div>
+        
+    </section>
+       
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

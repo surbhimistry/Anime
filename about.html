@@ -1,0 +1,62 @@
+<html>
+<head> 
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title> Anime Blog </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8df5502624.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <section class="header">
+     <nav>
+         <a href="index.html"> <img src="IMAGES/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cont.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+     </nav>
+<div class="text-box">
+    <h1>ABOUT</h1>
+<p>About this page? I don't know...
+I've created this page out of boredom and was just testing my skills to see if i could create a website or not.<br><br>
+
+Apart from this, if you don't know me and have come across this page. Let's be friends! DM me using those cute icons below.</p>
+    
+    
+    <p>
+    <a href="https://www.instagram.com/surbbhiii/"> 
+    <i class="fa-brands fa-instagram" style="font-size:50px;"> </i> 
+    </a> 
+        
+    <a href="https://twitter.com/surbbhiii"> 
+    <i class="fa-brands fa-twitter" style="font-size:50px;"></i> 
+    </a>
+        
+    <a href="mailto:surbhim012@gmail.com"> 
+    <i class="fa-solid fa-envelope" style="font-size:50px;"></i> 
+    </a>
+    </p>
+    
+</div>
+    </section>
+
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

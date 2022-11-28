@@ -1,0 +1,44 @@
+<html>
+<head> 
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title> Anime Blog </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8df5502624.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url(IMAGES/5.jpg);"> 
+    <section class="header">
+     <nav>
+         <a href="index.html"> <img src="IMAGES/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cont.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+     </nav>
+<div class="bleach-box">
+    <h1>BLEACH</h1>
+    <p><img src="IMAGES/BLEACH.jpg" width="700" height="400">High school student Ichigo Kurosaki, who has the ability to see ghosts, gains soul reaper powers from Rukia Kuchiki and sets out to save the world from "Hollows".<br> High school student Kurosaki Ichigo is unlike any ordinary kid. Why? Because he can see ghosts. Ever since a young age, he's been able to see spirits from the afterlife. Ichigo's life completely changes one day when he and his two sisters are attacked by an evil, hungry and tormented spirit known as a Hollow. Right in the nick of time, Ichigo and his siblings are aided by a Shinigami (Death God) named Kuchiki Rukia, whose responsibility it is to send good spirits (Pluses) to the afterlife known as Soul Society, and to purify Hollows and send them up to Soul Society. But during the fight against the Hollow, Rukia is injured and must transfer her powers to Ichigo. With this newly acquired power, so begins Kurosaki Ichigo's training and duty as a Shinigami to maintain the balance between the world of the living and the world of the dead...</p>
+
+</div>
+    </section>
+       
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

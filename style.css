@@ -1,0 +1,395 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url(IMAGES/homebg.jpg);
+    
+        
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #F40009; 
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px
+}
+nav .fa-solid{
+    display: none;
+}
+
+.pbox p{
+    text-align: left;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    padding-left: 50px;
+    }
+
+.high{
+    width: 300px;
+    height: 100px;
+    border-radius: 25px;
+    position: absolute;
+    background-color: #F40009; 
+    color: #fff;
+    text-align: center;
+}
+
+.high p{
+    padding-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #F40009;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        }
+    nav .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+        
+    }
+    
+.grid2{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(80px, auto);   
+ }
+
+.high{
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+    position: absolute;
+    background-color: #F40009; 
+    color: #fff;
+    text-align: center;
+}
+
+.high p{
+    padding-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+}
+}
+
+.grid{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    }
+
+.c-1{
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+    background-color: #900000; 
+    opacity: 0.5;
+}
+.c-2{
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+}
+.c-2 img{
+    border-radius: 25px;
+}
+.c-2 p{
+    margin: 20px 0 40px;
+    font-size: 20px
+}
+.c-2 p a{
+    color: #fff;
+    text-decoration: none;
+}
+.c3-1{
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+    background-color: #900000; 
+    opacity: 0.5;
+}
+.c3-2{
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+}
+.c3-2 img{
+    border-radius: 25px;
+}
+.c3-2 p{
+    margin: 20px 0 40px;
+    font-size: 20px
+}
+.c3-2 p a{
+    color: #fff;
+    text-decoration: none;
+}
+.c4-1{
+    width: 300px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+    background-color: #900000; 
+    opacity: 0.5;
+}
+.c4-2{
+    width: 300px;
+    height: 400px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+}
+.c4-2 img{
+    border-radius: 25px;
+}
+.c4-2 p{
+    margin: 20px 0 40px;
+    font-size: 20px
+}
+.c4-2 p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media(max-width: 700px){
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(400px, auto);   
+ }
+
+.c-1{
+    width: 240px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+    background-color: #900000; 
+    opacity: 0.5;
+}
+.c-2{
+    width: 240px;
+    height: 300px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+}
+.c-2 img{
+    border-radius: 25px;
+    width: 240px;
+    height: 250px;
+}
+.c-2 p{
+    margin: 20px 0 40px;
+    font-size: 20px
+}
+
+.c3-1{
+    width: 240px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+    background-color: #900000; 
+    opacity: 0.5;
+}
+.c3-2{
+    width: 240px;
+    height: 300px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+}
+.c3-2 img{
+    border-radius: 25px;
+    width: 240px;
+    height: 250px;
+}
+.c3-2 p{
+    margin: 20px 0 40px;
+    font-size: 20px
+}
+
+.c4-1{
+    width: 240px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+    background-color: #900000; 
+    opacity: 0.5;
+}
+.c4-2{
+    width: 240px;
+    height: 300px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 30px;
+    position: absolute;
+}
+.c4-2 img{
+    border-radius: 25px;
+    width: 240px;
+    height: 250px;
+}
+.c4-2 p{
+    margin: 20px 0 40px;
+    font-size: 20px
+}
+}
+
+
+.text-box p a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px
+    
+}
+
+.bleach-box {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    text-align: left;
+    }
+
+.bleach-box h1 {
+    font-size: 50px;
+    padding-left: 40px;
+}
+.bleach-box p {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.bleach-box img {
+  float: left;
+  padding: 20px;
+}
+@media(max-width: 700px){
+    .bleach-box h1 {
+    font-size: 30px;
+    
+}
+.bleach-box p {
+    font-size: 15px;
+    
+}
+
+.bleach-box img {
+  width: 300px;
+  height: 200px;
+}
+}

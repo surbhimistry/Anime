@@ -1,0 +1,45 @@
+<html>
+<head> 
+    <meta name="viewport" content="with-device-width, initial-scale=1.0">
+    <title> Anime Blog </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/8df5502624.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url(IMAGES/6.jpg);"> 
+    <section class="header">
+     <nav>
+         <a href="index.html"> <img src="IMAGES/logo.png"></a>
+      <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cont.html">BLOG</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </div>
+         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+     </nav>
+<div class="bleach-box">
+    <h1>NARUTO</h1>
+    <p><img src="IMAGES/NARUTO2.jpg" width="700" height="400">Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja. <br> Many years ago, in the hidden village of Konoha, lived a great demon fox. When it swung one of it's nine tails, a tsunami occurred. The fourth hokage sealed this demon fox inside a boy in exchange for his own life. Naruto was that boy, and he grew up with no family, and the villagers hated him thinking that he himself was the demon fox. Naruto's dream is to become Hokage, and have the villagers acknowledge him.<br>
+    Naruto:shippuden: Naruto Uzumaki wants to be the best ninja in the land. He's done well so far, but with the looming danger posed by the mysterious Akatsuki organization, Naruto knows he must train harder than ever and leaves his village for intense exercises that will push him to his limits.</p>
+    
+</div>
+    </section>
+       
+    <script>
+        
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
